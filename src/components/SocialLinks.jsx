@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { MdEmail } from 'react-icons/md';
-import FooterImage from '../assets/Leo6.jpeg';
 
 const SocialLinks = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -46,15 +45,6 @@ const SocialLinks = () => {
                 <p className="mt-8 text-sm text-white">
                     Vielen Dank für deinen Besuch ✨
                 </p>
-                <div className="mt-12 flex justify-center">
-                    <div className="relative bg-[#111827] p-4 rounded-2xl shadow-xl max-w-lg w-full">
-                        <img
-                            src={FooterImage}
-                            alt="Abschlussbild"
-                            className="rounded-xl w-full object-cover"
-                        />
-                    </div>
-                </div>
             </div>
         </section>
     );

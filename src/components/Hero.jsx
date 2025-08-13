@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { FaInstagram, FaTiktok, FaYoutube, FaTwitch } from 'react-icons/fa';
-import HeroImage from '../assets/Leo5.jpeg';
+import HeroImage from '../assets/lute1.jpg';
 
 const Hero = () => {
     const sectionRef = useRef(null);

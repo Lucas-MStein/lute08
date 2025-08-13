@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import Logo from '../assets/freshprinceofberlin_logo.png';
+import Logo from '../assets/lutelogo.png';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);

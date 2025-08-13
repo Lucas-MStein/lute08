@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
-import leo8 from '../assets/gallery/Leo8.jpeg';
-import leo3 from '../assets/gallery/Leo3.jpeg';
-import leo11 from '../assets/gallery/Leo11.jpeg';
+import lute2 from '../assets/gallery/lute2.jpg';
+import lute3 from '../assets/gallery/lute3.jpg';
+import lute4 from '../assets/gallery/lute4.png';
 
 const ImageGallery = () => {
-    const images = [leo8, leo3, leo11];
+    const images = [lute2, lute3, lute4];
 
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
