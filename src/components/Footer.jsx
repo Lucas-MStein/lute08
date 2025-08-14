@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="text-center text-sm text-gray-500 py-10 border-t border-gray-700 mt-16">
             <p>
-                &copy; {new Date().getFullYear()} freshprinceofberlin |{' '}
+                &copy; {new Date().getFullYear()} lute.08 |{' '}
                 <button
                     onClick={() => setIsImpressumOpen(true)}
                     className="text-sky-400 hover:underline focus:outline-none"

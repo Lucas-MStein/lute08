@@ -46,22 +46,22 @@ const Hero = () => {
                 }`}
             >
                 <h1 className="text-4xl sm:text-6xl font-bold text-blue-400 drop-shadow-md">
-                    Der Berliner, der das Internet zum Lachen bringt.
+                    Comedy trifft Reaktion.
                 </h1>
-                <p className="mt-4 text-lg sm:text-xl text-gray-100">
-                    Leo aka freshprinceofberlin – bekannt für virale Comedy-Skits und Urban Culture.
+                <p className="mt-8 text-lg sm:text-xl text-gray-100">
+                    Der Experte unter den Experten liefert mit seiner Expertise haarscharfe Analysen.
                 </p>
 
-                <div className="mt-8 flex flex-wrap gap-4 justify-center">
+                <div className="mt-12 flex flex-wrap gap-4 justify-center">
                     <a
-                        href="https://www.instagram.com/freshprinceofberlin/"
+                        href="https://www.instagram.com/lute.08/"
                         className="flex items-center gap-2 px-7 py-3 text-lg rounded-full bg-pink-500 text-white
                                    hover:bg-pink-600 transition duration-300 ease-in-out transform hover:scale-105 hover:brightness-110"
                     >
                         <FaInstagram className="text-2xl" /> Instagram
                     </a>
                     <a
-                        href="https://www.tiktok.com/@freshprinceofberlin"
+                        href="https://www.tiktok.com/@lute_08"
                         className="flex items-center gap-2 px-7 py-3 text-lg rounded-full bg-black text-white
                                    hover:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-105 hover:brightness-110"
                     >

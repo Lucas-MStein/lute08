@@ -35,10 +35,10 @@ const SocialLinks = () => {
                 <div className="flex justify-center items-center gap-4 text-lg">
                     <MdEmail className="text-pink-500 text-2xl" />
                     <a
-                        href="mailto:leobusinessrequests@gmail.com"
+                        href="mailto:lute08.anfragen@gmail.com"
                         className="text-pink-400 hover:underline"
                     >
-                        leobusinessrequests@gmail.com
+                        lute08.anfragen@gmail.com
                     </a>
                 </div>
 
