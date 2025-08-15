@@ -37,7 +37,7 @@ const Header = () => {
                     } hidden md:flex space-x-6 text-sm font-medium transition-all duration-500 ease-in-out`}
                 >
                     <li><a href="#hero" className="hover:text-pink-400 transition">Start</a></li>
-                    <li><a href="#videos" className="hover:text-pink-400 transition">Highlights</a></li>
+                    <li><a href="#videos" className="hover:text-pink-400 transition">Videos</a></li>
                     <li><a href="#about" className="hover:text-pink-400 transition">Über mich</a></li>
                     <li><a href="#kontakt" className="hover:text-pink-400 transition">Kontakt</a></li>
                 </ul>
