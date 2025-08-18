@@ -57,7 +57,7 @@ const Header = () => {
             {menuOpen && (
                 <ul className="md:hidden fixed top-0 left-0 w-full h-screen bg-black bg-opacity-90 backdrop-blur-sm flex flex-col items-center justify-center space-y-6 text-lg font-medium z-40">
                     <li><a href="#hero" onClick={handleLinkClick} className="hover:text-pink-400 transition">Start</a></li>
-                    <li><a href="#videos" onClick={handleLinkClick} className="hover:text-pink-400 transition">Highlights</a></li>
+                    <li><a href="#highlights" onClick={handleLinkClick} className="hover:text-pink-400 transition">Highlights</a></li>
                     <li><a href="#sponsor" onClick={handleLinkClick} className="hover:text-pink-400 transition">Partner</a></li>
                     <li><a href="#about" onClick={handleLinkClick} className="hover:text-pink-400 transition">Über mich</a></li>
                     <li><a href="#kontakt" onClick={handleLinkClick} className="hover:text-pink-400 transition">Kontakt</a></li>
