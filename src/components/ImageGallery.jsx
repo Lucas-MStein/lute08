@@ -25,7 +25,7 @@ const ImageGallery = () => {
 
     return (
         <section
-            id="videos"
+            id="highlights"
             ref={sectionRef}
             className={`bg-[#0b0f1a] text-white py-16 px-6 md:px-12 transition-all duration-1000 ease-in-out transform 
                        ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
