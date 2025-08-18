@@ -1,10 +1,11 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import InstagramSlider from './components/InstagramSlider';
+import InstagramSlider from './components/ImageGallery';
 import About from './components/About';
 import SocialLinks from './components/SocialLinks';
 import Footer from './components/Footer';
+import ImageGallery from "./components/ImageGallery";
 
 function App() {
     return (
@@ -15,7 +16,7 @@ function App() {
             {/* Hauptinhalt mit Abstand zum Header */}
             <main className>
                 <Hero />
-                <InstagramSlider />
+                <ImageGallery />
                 <About />
                 <SocialLinks />
             </main>
