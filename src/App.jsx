@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import InstagramSlider from './components/ImageGallery';
 import About from './components/About';
 import SocialLinks from './components/SocialLinks';
 import Footer from './components/Footer';
 import ImageGallery from "./components/ImageGallery";
+import SponsorSection from "./components/Sponsors";
 
 function App() {
     return (
@@ -17,6 +17,7 @@ function App() {
             <main className>
                 <Hero />
                 <ImageGallery />
+                <SponsorSection />
                 <About />
                 <SocialLinks />
             </main>
