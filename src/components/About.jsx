@@ -31,18 +31,11 @@ const About = () => {
                 <div className="w-full sm:w-1/2 text-white">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-sky-500">Über mich</h2>
                     <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                        Leo kombiniert authentischen Berliner Humor mit urbanem Style und
-                        hat sich mit seinen viralen Comedy-Skits auf Social Media eine starke Community aufgebaut.
-                        Seine Inhalte verbinden Entertainment mit einem Gespür für den Zeitgeist.
+                        Lute macht Comedy, die direkt aus dem Feed ins Zwerchfell geht. In schnellen Reaktions-Clips nimmt er Trends, Clips und Alltagsmomente aufs Korn – ehrlich, pointiert und mit einer guten Portion Humor.
+                        Was ihn ausmacht: schnelle Schnitte, spontane Punchlines und ein Gespür dafür, was gerade im Netz passiert. Ob auf TikTok, YouTube oder Instagram – wer Lute folgt, bekommt täglich frischen Stoff zum Lachen.
                     </p>
                     <p className="text-gray-400 italic py-4">
-                        „Wenn wir alle mehr wären wie Leo wäre die Welt ein besserer Ort.“ — Mutter Theresa
-                    </p>
-                    <p className="text-gray-400 italic py-4">
-                        „Der Grund warum ich mit Fitness angefangen habe.“ — Markus Rühl
-                    </p>
-                    <p className="text-gray-400 italic py-4">
-                        „Leo ist mein Lieblingsstreamer.“ — Kai Cenat
+                        „Oh ja, da regnets.“ — Lute
                     </p>
                 </div>
 

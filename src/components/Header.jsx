@@ -40,7 +40,7 @@ const Header = () => {
                     <li><a href="#highlights" className="hover:text-pink-400 transition">Highlights</a></li>
                     <li><a href="#sponsor" className="hover:text-pink-400 transition">Partner</a></li>
                     <li><a href="#about" className="hover:text-pink-400 transition">Über mich</a></li>
-                    <li><a href="#kontakt" className="hover:text-pink-400 transition">Kontakt</a></li>
+                    <li><a href="#contact" className="hover:text-pink-400 transition">Kontakt</a></li>
                 </ul>
 
                 {/* Mobile Menü-Icon */}
@@ -60,7 +60,7 @@ const Header = () => {
                     <li><a href="#highlights" onClick={handleLinkClick} className="hover:text-pink-400 transition">Highlights</a></li>
                     <li><a href="#sponsor" onClick={handleLinkClick} className="hover:text-pink-400 transition">Partner</a></li>
                     <li><a href="#about" onClick={handleLinkClick} className="hover:text-pink-400 transition">Über mich</a></li>
-                    <li><a href="#kontakt" onClick={handleLinkClick} className="hover:text-pink-400 transition">Kontakt</a></li>
+                    <li><a href="#contact" onClick={handleLinkClick} className="hover:text-pink-400 transition">Kontakt</a></li>
                 </ul>
             )}
         </header>

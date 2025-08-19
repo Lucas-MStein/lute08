@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import lute2 from '../assets/gallery/lute2.jpg';
 import lute3 from '../assets/gallery/lute3.jpg';
-import lute4 from '../assets/gallery/lute4.png';
+import lute4 from '../assets/gallery/lute4.jpg';
 
 const ImageGallery = () => {
     const images = [lute2, lute3, lute4];
