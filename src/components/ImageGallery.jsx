@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import lute2 from '../assets/gallery/lute2.jpg';
-import lute4 from '../assets/gallery/lute4.jpg';
+import lute2 from '../assets/gallery/lute2.webp';
+import lute4 from '../assets/gallery/lute4.webp';
 
 const ImageGallery = () => {
     const images = [lute2, lute4];

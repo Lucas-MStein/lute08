@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { FaInstagram, FaTiktok, FaYoutube, FaTwitch, FaDiscord } from 'react-icons/fa'; // <-- Discord Icon importieren
-import HeroImage from '../assets/lute1.jpg';
+import HeroImage from '../assets/lute1.webp';
 
 const Hero = () => {
     const sectionRef = useRef(null);

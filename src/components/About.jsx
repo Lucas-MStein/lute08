@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import AboutImage from '../assets/lute3.jpg';
+import AboutImage from '../assets/lute3.webp';
 
 const About = () => {
     const [isVisible, setIsVisible] = useState(false);
