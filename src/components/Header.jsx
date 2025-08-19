@@ -6,29 +6,27 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [showNav, setShowNav] = useState(false);
 
-    // Scrollverhalten überwachen
+    // Scrollverhalten überwachen (Nav erst nach 50px einblenden)
     useEffect(() => {
-        const handleScroll = () => {
-            setShowNav(window.scrollY > 50); // erst nach 50px scrollen anzeigen
-        };
-
+        const handleScroll = () => setShowNav(window.scrollY > 50);
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const handleLinkClick = () => {
-        setMenuOpen(false);
-    };
+    const handleLinkClick = () => setMenuOpen(false);
 
     return (
         <header className="fixed top-0 left-0 w-full bg-black bg-opacity-60 backdrop-blur-sm text-white shadow z-50">
             <nav className="max-w-5xl mx-auto px-6 py-2 flex justify-between items-center">
-                {/* Logo */}
-                <img
-                    src={Logo}
-                    alt="freshprinceofberlin Logo"
-                    className="h-10 md:h-12 w-auto"
-                />
+                {/* Logo → linkt zur Hero-Section */}
+                <a href="#hero" onClick={handleLinkClick} aria-label="Zur Start-Sektion">
+                    <img
+                        src={Logo}
+                        alt="lute Logo"
+                        className="h-10 md:h-12 w-auto cursor-pointer"
+                        title="Zur Start-Sektion"
+                    />
+                </a>
 
                 {/* Desktop Navigation – eingeblendet beim Scrollen */}
                 <ul
@@ -36,7 +34,6 @@ const Header = () => {
                         showNav ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
                     } hidden md:flex space-x-6 text-sm font-medium transition-all duration-500 ease-in-out`}
                 >
-                    <li><a href="#hero" className="hover:text-pink-400 transition">Start</a></li>
                     <li><a href="#highlights" className="hover:text-pink-400 transition">Highlights</a></li>
                     <li><a href="#sponsor" className="hover:text-pink-400 transition">Partner</a></li>
                     <li><a href="#about" className="hover:text-pink-400 transition">Über mich</a></li>
@@ -56,7 +53,6 @@ const Header = () => {
             {/* Mobile Menü (Overlay) */}
             {menuOpen && (
                 <ul className="md:hidden fixed top-0 left-0 w-full h-screen bg-black bg-opacity-90 backdrop-blur-sm flex flex-col items-center justify-center space-y-6 text-lg font-medium z-40">
-                    <li><a href="#hero" onClick={handleLinkClick} className="hover:text-pink-400 transition">Start</a></li>
                     <li><a href="#highlights" onClick={handleLinkClick} className="hover:text-pink-400 transition">Highlights</a></li>
                     <li><a href="#sponsor" onClick={handleLinkClick} className="hover:text-pink-400 transition">Partner</a></li>
                     <li><a href="#about" onClick={handleLinkClick} className="hover:text-pink-400 transition">Über mich</a></li>

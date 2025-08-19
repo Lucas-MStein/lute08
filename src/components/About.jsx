@@ -43,7 +43,7 @@ const About = () => {
                 <div className="w-full sm:w-1/2 flex justify-center">
                     <img
                         src={AboutImage}
-                        alt="Leo"
+                        alt="lute"
                         className="rounded-xl shadow-xl object-cover w-full h-[400px] md:h-[500px]"
                     />
                 </div>

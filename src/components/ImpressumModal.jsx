@@ -22,7 +22,7 @@ const ImpressumModal = ({ isOpen, onClose }) => {
                         <h3 className="font-semibold text-white">Angaben gemäß § 5 DDG</h3>
                         <p>
                             Luca Fabien Tenner<br />
-                            Künstlername: <span className="italic">lute_08</span>
+                            Künstlername: <span className="italic">lute</span>
                         </p>
                         <p className="mt-2">
                             c/o SourceArt<br />
