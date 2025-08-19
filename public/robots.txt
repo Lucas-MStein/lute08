@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lute08.com/sitemap.xml
