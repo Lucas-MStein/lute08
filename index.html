@@ -25,6 +25,7 @@
   <meta property="og:description" content="Virale Reactions & Comedy von Lute. Schau dir seine neuesten Clips und Socials an." />
   <meta property="og:url" content="https://lute08.de" />
   <meta property="og:image" content="https://lute08.de/og-image.jpg" />
+  <meta property="og:image" content="https://lute08.de/og-preview.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
@@ -59,6 +60,29 @@
       "name": "lute_08",
       "url": "https://lute08.de"
     }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4THXXFKETQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    // Basis-Config
+    gtag('config', 'G-4THXXFKETQ', {
+      anonymize_ip: true,
+      page_path: location.pathname + location.search + location.hash
+    });
+
+    // Anker-Navigation als Pageview tracken (optional, aber nützlich)
+    window.addEventListener('hashchange', function () {
+      gtag('event', 'page_view', {
+        page_title: document.title,
+        page_location: location.href,
+        page_path: location.pathname + location.search + location.hash
+      });
+    });
   </script>
 </head>
 
