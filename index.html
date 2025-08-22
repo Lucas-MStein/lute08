@@ -15,6 +15,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
   <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet" />
 
   <!-- Open Graph -->
@@ -25,8 +27,9 @@
   <meta property="og:description" content="Virale Reactions & Comedy von Lute. Schau dir seine neuesten Clips und Socials an." />
   <meta property="og:url" content="https://lute08.de" />
 
-  <meta property="og:image" content="https://lute08.de/og-image-1080x1080.jpg" />
-  <meta property="og:image:secure_url" content="https://lute08.de/og-image-1080x1080.jpg" />
+  <!-- Tipp: ?v=3 als Cache-Buster für WhatsApp/Facebook -->
+  <meta property="og:image" content="https://lute08.de/og-image-1080x1080.jpg?v=3" />
+  <meta property="og:image:secure_url" content="https://lute08.de/og-image-1080x1080.jpg?v=3" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1080" />
   <meta property="og:image:height" content="1080" />
@@ -36,49 +39,44 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="lute_08 – Comedy & Reactions" />
   <meta name="twitter:description" content="Schnelle Reactions, klare Pointen – Lute liefert täglich Stoff zum Lachen." />
-  <meta name="twitter:image" content="https://lute08.de/og-image-1080x1080.jpg" />
+  <meta name="twitter:image" content="https://lute08.de/og-image-1080x1080.jpg?v=3" />
+  <!-- Optional -->
+  <meta name="twitter:site" content="@lute_08" />
+  <meta name="twitter:creator" content="@lute_08" />
 
-  <!-- JSON-LD: Person + WebSite -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Lute",
-      "alternateName": "lute_08",
-      "jobTitle": "Content Creator",
-      "description": "Comedy & Reactions.",
-      "url": "https://lute08.de",
-      "sameAs": [
-        "https://www.instagram.com/lute.08",
-        "https://www.tiktok.com/@lute_08",
-        "https://www.youtube.com/@lute_08",
-        "https://www.twitch.tv/lute_08"
-      ]
-    }
-  </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "lute_08",
-      "url": "https://lute08.de"
-    }
-  </script>
+  <!-- JSON-LD: Person + WebSite (unverändert) -->
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Lute",
+    "alternateName":"lute_08",
+    "jobTitle":"Content Creator",
+    "description":"Comedy & Reactions.",
+    "url":"https://lute08.de",
+    "sameAs":[
+      "https://www.instagram.com/lute.08",
+      "https://www.tiktok.com/@lute_08",
+      "https://www.youtube.com/@lute_08",
+      "https://www.twitch.tv/lute_08"
+    ]
+  }</script>
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"lute_08",
+    "url":"https://lute08.de"
+  }</script>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) – aktuell G-4THXXFKETQ -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4THXXFKETQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-
-    // Basis-Config
     gtag('config', 'G-4THXXFKETQ', {
       anonymize_ip: true,
       page_path: location.pathname + location.search + location.hash
     });
-
-    // Anker-Navigation als Pageview tracken (optional, aber nützlich)
     window.addEventListener('hashchange', function () {
       gtag('event', 'page_view', {
         page_title: document.title,
@@ -88,7 +86,6 @@
     });
   </script>
 </head>
-
 <body>
 <div id="root"></div>
 <script type="module" src="/src/main.jsx"></script>
