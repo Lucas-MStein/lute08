@@ -72,7 +72,7 @@ const Hero = () => {
                         <FaTwitch className="text-2xl" /> Twitch
                     </a>
                     <a
-                        href="https://discord.gg/7HEVWkUt"
+                        href="https://discord.gg/a2McB9g3qg"
                         className="flex items-center gap-2 px-7 py-3 text-lg rounded-full bg-indigo-600 text-white
                             hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105 hover:brightness-110"
                         target="_blank"
