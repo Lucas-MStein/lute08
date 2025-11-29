@@ -17,7 +17,6 @@ function App() {
             <main className>
                 <Hero />
                 <ImageGallery />
-                <SponsorSection />
                 <About />
                 <SocialLinks />
             </main>
