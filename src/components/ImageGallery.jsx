@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import lute2 from '../assets/gallery/lute2.webp';
 import lute4 from '../assets/gallery/lute4.webp';
-
+import lute5 from '../assets/gallery/lute5.webp';
 const ImageGallery = () => {
-    const images = [lute2, lute4];
+    const images = [lute2, lute4, lute5];
 
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
@@ -33,7 +33,7 @@ const ImageGallery = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-sky-500">Highlights</h2>
 
                 {/* Grid: mobil 1 Spalte, ab md 2 Spalten */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     {images.map((src, index) => (
                         <div
                             key={index}
