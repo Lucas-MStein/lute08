@@ -109,31 +109,32 @@ const Header = () => {
             {/* Mobile Overlay */}
             <div
                 className={[
-                    'md:hidden fixed inset-0 z-40',
+                    'md:hidden fixed inset-0 z-[60] w-screen min-h-[100svh]',
+                    'bg-black/80 backdrop-blur-sm', // <-- DAS ist der entscheidende Teil
                     'transition-opacity duration-200 ease-out motion-reduce:transition-none',
                     menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none',
                 ].join(' ')}
                 aria-hidden={!menuOpen}
             >
-                {/* Backdrop (click to close) */}
-                <div
-                    className={[
-                        'absolute inset-0 bg-black/80 backdrop-blur-sm',
-                        'transition-opacity duration-200 ease-out motion-reduce:transition-none',
-                        menuOpen ? 'opacity-100' : 'opacity-0',
-                    ].join(' ')}
+
+                {/* Close button inside overlay (optional, aber nice) */}
+                <button
+                    type="button"
                     onClick={() => setMenuOpen(false)}
-                />
+                    aria-label="Menü schließen"
+                    className="absolute right-5 top-5 z-[70] rounded-full p-2 text-white/90 hover:bg-white/10
+               focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400"
+                >
+                    <FaTimes className="text-2xl" />
+                </button>
 
                 {/* Panel */}
                 <div
                     id="mobile-nav"
                     className={[
-                        'relative z-50 flex h-full flex-col items-center justify-center gap-8 text-xl font-semibold',
+                        'relative z-[65] flex min-h-[100svh] flex-col items-center justify-center gap-8 text-xl font-semibold',
                         'transition-all duration-300 ease-out motion-reduce:transition-none',
-                        menuOpen
-                            ? 'opacity-100 translate-y-0 scale-100'
-                            : 'opacity-0 translate-y-3 scale-[0.98]',
+                        menuOpen ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-3 scale-[0.98]',
                     ].join(' ')}
                 >
                     {links.map((l, idx) => (
