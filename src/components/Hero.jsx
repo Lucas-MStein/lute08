@@ -70,7 +70,7 @@ const Hero = () => {
             {/* Background image */}
             <img
                 src={HeroImage}
-                alt="Lute in Berlin"
+                alt="Lute"
                 className="absolute inset-0 h-full w-full object-cover"
                 loading="eager"
                 fetchpriority="high"
