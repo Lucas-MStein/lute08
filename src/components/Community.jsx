@@ -16,13 +16,6 @@ const STATS = [
         color: '#FF2066',
     },
     {
-        platform: 'YouTube',
-        handle: '@lute_08',
-        value: '50+',
-        label: 'YouTube Abos',
-        color: '#FF0000',
-    },
-    {
         platform: 'Instagram',
         handle: '@lute.08',
         value: '15K+',
@@ -98,24 +91,24 @@ const Community = () => {
                 </div>
 
                 {/* Stat-Cards */}
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20 max-w-4xl mx-auto">
                     {STATS.map((s) => (
                         <div
                             key={s.label}
-                            className="relative bg-surface border border-white/[0.06] rounded-2xl p-7 flex flex-col gap-2 overflow-hidden"
+                            className="relative bg-surface border border-white/[0.06] rounded-2xl p-10 md:p-7 flex flex-col gap-2 overflow-hidden"
                         >
                             <div
                                 className="absolute top-0 left-6 right-6 h-0.5 rounded-b"
                                 style={{ background: s.color }}
                             />
                             <div
-                                className="font-display italic font-black leading-none tracking-tight text-[clamp(36px,4vw,56px)]"
+                                className="font-display italic font-black leading-none tracking-tight text-[64px] md:text-[clamp(36px,4vw,56px)]"
                                 style={{ color: s.color }}
                             >
                                 {s.value}
                             </div>
-                            <div className="text-[15px] font-semibold text-ink">{s.label}</div>
-                            <div className="text-xs text-mute/80 tracking-wide">{s.handle}</div>
+                            <div className="text-lg md:text-[15px] font-semibold text-ink">{s.label}</div>
+                            <div className="text-sm md:text-xs text-mute/80 tracking-wide">{s.handle}</div>
                         </div>
                     ))}
                 </div>

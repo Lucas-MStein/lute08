@@ -82,7 +82,7 @@ const Hero = () => {
             <div
                 ref={sectionRef}
                 className={[
-                    'relative z-10 w-full max-w-6xl mx-auto px-6 pt-28 pb-20',
+                    'relative z-10 w-full max-w-6xl mx-auto px-6 pt-28 pb-36',
                     'grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center',
                     'transition-all duration-1000 ease-out',
                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6',
@@ -127,7 +127,7 @@ const Hero = () => {
                     </div>
 
                     {/* Social pills */}
-                    <div className="flex flex-wrap gap-2 mt-1">
+                    <div className="flex flex-wrap lg:flex-nowrap gap-2 mt-1">
                         {SOCIALS.map((s) => (
                             <a
                                 key={s.label}
@@ -136,9 +136,9 @@ const Hero = () => {
                                 rel="noopener noreferrer"
                                 aria-label={`${s.label} öffnen`}
                                 style={{ '--social-color': s.color }}
-                                className="group inline-flex items-center gap-2 bg-surface border border-white/[0.08] text-mute px-3.5 py-2 rounded-full text-[13px] font-medium transition-colors duration-200 hover:text-[color:var(--social-color)] hover:bg-[color:var(--social-color)]/10 hover:border-[color:var(--social-color)]/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--social-color)]"
+                                className="group inline-flex items-center gap-2 lg:gap-1.5 bg-surface border border-white/[0.08] text-mute px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-full text-[13px] lg:text-xs font-medium whitespace-nowrap transition-colors duration-200 hover:text-[color:var(--social-color)] hover:bg-[color:var(--social-color)]/10 hover:border-[color:var(--social-color)]/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--social-color)]"
                             >
-                                <s.Icon className="text-base" />
+                                <s.Icon className="text-base lg:text-sm" />
                                 <span>{s.handle}</span>
                             </a>
                         ))}
@@ -203,7 +203,7 @@ const Hero = () => {
             </div>
 
             {/* Scroll hint */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+            <div className="absolute bottom-1 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
                 <span className="text-[11px] uppercase tracking-[0.12em] text-ink">Scroll</span>
                 <div className="w-px h-10 bg-gradient-to-b from-ink/50 to-transparent" />
             </div>

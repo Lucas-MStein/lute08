@@ -12,7 +12,6 @@ const Header = () => {
             { href: '#clips', label: 'Highlights' },
             { href: '#about', label: 'Über' },
             { href: '#community', label: 'Community' },
-            { href: '#booking', label: 'Booking' },
         ],
         []
     );
