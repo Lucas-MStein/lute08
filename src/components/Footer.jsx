@@ -19,7 +19,7 @@ const NAV = [
     { label: 'Highlights', href: '#clips' },
     { label: 'Über', href: '#about' },
     { label: 'Community', href: '#community' },
-    { label: 'Booking', href: '#booking' },
+    { label: 'Kontakt', href: '#booking' },
 ];
 
 const LEGAL = [
